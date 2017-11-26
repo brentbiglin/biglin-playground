@@ -4,9 +4,9 @@ var hero = document.getElementById("hero");
 // var t = setInterval(grow, 1000);
 
 document.getElementById("hero").onclick = function grow() {
-  if(width >= 8) {
+  if(width >= 38) {
     clearInterval(t);
-    var t = setInterval(shrink, 1000);
+    // var t = setInterval(shrink, 1000);
     }
     else {
       width += .5;
