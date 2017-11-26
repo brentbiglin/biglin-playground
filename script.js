@@ -1,7 +1,8 @@
 var width = 4;
 // bottom border width for h1
 var hero = document.getElementById("hero");
-var t = setInterval(grow, 1000);
+hero.onclick(grow, 1000)
+// var t = setInterval(grow, 1000);
 
 function grow() {
   if(width >= 8) {
