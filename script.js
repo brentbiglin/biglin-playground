@@ -5,9 +5,10 @@
 
 function breathe() {
   if(width >= 48) {
-    clearInterval(t);
+      width -= .5;
+      hero.style.borderBottomWidth = width+"px";
     }
-    else {
+    else if(width <= 1) {
       width += .5;
       hero.style.borderBottomWidth = width+"px";
     }
