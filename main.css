@@ -82,6 +82,8 @@ h1 {
 	font-weight: 900;
 	border-bottom-style: solid;
 	border-bottom-color: #715ACE;
+	border-top-style: solid;
+	border-top-color: #715ACE;
         display: inline-block;
         line-height: 0.85;
         text-shadow:

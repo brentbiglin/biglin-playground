@@ -4,13 +4,14 @@ var hero = document.getElementById("hero");
 // var t = setInterval(grow, 1000);
 
 document.getElementById("hero").onclick = function grow() {
-  if(width >= 38) {
-    clearInterval(t);
+  if(width >= 36) {
+    // clearInterval(t);
     // var t = setInterval(shrink, 1000);
     }
     else {
       width += 1;
       hero.style.borderBottomWidth = width+"px";
+      hero.style.borderTopWidth = width+"px";
     }
   };
 
