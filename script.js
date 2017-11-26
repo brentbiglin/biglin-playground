@@ -1,13 +1,12 @@
 var width = 4;
 // bottom border width for h1
 var hero = document.getElementById("hero");
-var t1 = setInterval(grow, 10);
-var t2 = setInterval(shrink, 10);
+var t = setInterval(grow, 10);
 
 function grow() {
   if(width >= 36) {
-    clearInterval(t1);
-    setInterval(t2);
+    clearInterval(t);
+    var t = setInterval(shrink, 10);
     }
     else {
       width += .5;
@@ -18,8 +17,8 @@ function grow() {
 
 function shrink() {
   if(width <= 1) {
-    clearInterval(t2);
-    setIntervial(t1);
+    clearInterval(t);
+    var t = setInterval(grow, 10);
     }
     else {
       width -= .5;
