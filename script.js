@@ -1,14 +1,14 @@
-  var width = 4;
+  var width = 90;
   // bottom border width for h1
   var hero = document.getElementById("hero");
   var t = setInterval(breathe, 10);
 
 function breathe() {
-  if(width >= 90) {
+  if(width = 4) {
     clearInterval(t);
     }
     else {
-      width += .5;
+      width -= .5;
       hero.style.borderBottomWidth = width+"px";
     }
   };
