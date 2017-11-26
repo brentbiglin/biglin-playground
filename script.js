@@ -9,7 +9,7 @@ document.getElementById("hero").onclick = function grow() {
     // var t = setInterval(shrink, 1000);
     }
     else {
-      width += .5;
+      width += 1;
       hero.style.borderBottomWidth = width+"px";
     }
   };
