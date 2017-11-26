@@ -4,7 +4,7 @@ var hero = document.getElementById("hero");
 var t = setInterval(grow, 10);
 
 function grow() {
-  if(width >= 36) {
+  if(width >= 8) {
     clearInterval(t);
     var t = setInterval(shrink, 10);
     }
