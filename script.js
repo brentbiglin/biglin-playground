@@ -5,7 +5,7 @@ window.onload = function() {
   var t = setInterval(breathe, 10);
 
 function breathe() {
-  if (width >= 90) {
+  if(width >= 90) {
     clearInterval(t);
     }
     else {
