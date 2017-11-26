@@ -12,4 +12,3 @@ function breathe() {
       hero.style.borderBottomWidth = width+"px";
     }
   };
-  setInterval(breathe, 10);
