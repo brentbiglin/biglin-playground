@@ -4,7 +4,7 @@
   var t = setInterval(breathe, 10);
 
 function breathe() {
-  if(width >= 48) {
+  if(width >= 36) {
     clearInterval(t);
     }
     else {
