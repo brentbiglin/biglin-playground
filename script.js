@@ -1,28 +1,14 @@
 var width = 4;
-// bottom border width for h1
-var hero = document.getElementById("hero");
-// var t = setInterval(grow, 1000);
+//  border width for h1
 
 document.getElementById("hero").onclick = function grow() {
-  if(width >= 36) {
-    // clearInterval(t);
-    // var t = setInterval(shrink, 1000);
+  if(width >= 28) {
+      hero.style.borderBottomWidth = 4+"px";
+      hero.style.borderTopWidth = 4+"px";
     }
     else {
       width += 1;
       hero.style.borderBottomWidth = width+"px";
       hero.style.borderTopWidth = width+"px";
-    }
-  };
-
-
-function shrink() {
-  if(width <= 1) {
-    clearInterval(t);
-    var t = setInterval(grow, 1000);
-    }
-    else {
-      width -= .5;
-      hero.style.borderBottomWidth = width+"px";
     }
   };
