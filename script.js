@@ -7,6 +7,7 @@
 function grow() {
   if(width >= 36) {
     clearInterval(t1);
+    shrink();
     }
     else {
       width += .5;
@@ -17,6 +18,7 @@ function grow() {
 function shrink() {
   if(width <= 1) {
     clearInterval(t2);
+    grow();
     }
     else {
       width -= .5;
