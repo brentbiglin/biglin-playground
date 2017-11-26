@@ -3,9 +3,8 @@ var width = 4;
 
 document.getElementById("hero").onclick = function grow() {
   if(width >= 28) {
-      hero.style.borderBottomWidth = 4+"px";
-      hero.style.borderTopWidth = 4+"px";
-      continue;
+      width = 4;
+      hero.style.borderBottomWidth = width+"px";
     }
     else {
       width += 1;
