@@ -1,5 +1,5 @@
 var width = 4;
-//  border width for h1
+//  border bottom width for h1
 
 document.getElementById("hero").onclick = function grow() {
   if(width >= 28) {
@@ -9,6 +9,5 @@ document.getElementById("hero").onclick = function grow() {
     else {
       width += 1;
       hero.style.borderBottomWidth = width+"px";
-      hero.style.borderTopWidth = width+"px";
     }
   };
