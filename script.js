@@ -1,7 +1,6 @@
-window.onload = function() {
   var width = 4;
   // bottom border width for h1
-  var h1 = document.getElementsByTagName("h1");
+  var hero = document.getElementByID("hero");
   var t = setInterval(breathe, 10);
 
 function breathe() {
@@ -10,7 +9,6 @@ function breathe() {
     }
     else {
       width += .5;
-      h1.style.borderBottomWidth = width+"px";
+      hero.style.borderBottomWidth = width+"px";
     }
-  }
-};
+  };
