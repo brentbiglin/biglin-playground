@@ -5,13 +5,12 @@ window.onload = function() {
   var t = setInterval(breathe, 10);
 
 function breathe() {
-  if (width >= 4) {
-    width -= .5;
-    h1.borderBottomWidth = width+"px";
+  if (width >= 90) {
+    clearInterval(t);
     }
-    else if (width <= 0) {
+    else {
       width += .5;
-      h1.borderBottomWidth = width+"px";
+      h1.style.borderBottomWidth = width+"px";
     }
   }
 };
