@@ -7,7 +7,7 @@ function breathe() {
   if(width >= 48) {
     clearInterval(t);
     }
-    else if(width <= 1) {
+    else {
       width += .5;
       hero.style.borderBottomWidth = width+"px";
     }
