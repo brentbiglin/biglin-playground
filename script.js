@@ -6,10 +6,10 @@ var t = setInterval(breathe, 10);
 function breathe() {
   if (width > 4) {
     width -= .5;
-    h1.borderBottom = width+"px solid #715ACE;";
+    h1.borderBottomWidth = width+"px";
     }
     else if (width <= 0) {
       width += .5;
-      h1.borderBottom = width+"px solid #715ACE;";
+      h1.borderBottomWidth = width+"px";
     }
   }
